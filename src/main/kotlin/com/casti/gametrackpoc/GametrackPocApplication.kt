@@ -1,14 +1,10 @@
 package com.casti.gametrackpoc
 
-import com.casti.gametrackpoc.games.game.Game
-import com.casti.gametrackpoc.games.game.GameRepository
+import com.casti.gametrackpoc.games.game.data.Game
+import com.casti.gametrackpoc.games.game.domain.GameRepository
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.stereotype.Service
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RestController
 import java.util.*
 
 @SpringBootApplication

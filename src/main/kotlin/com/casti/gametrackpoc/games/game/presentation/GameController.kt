@@ -1,6 +1,7 @@
-package com.casti.gametrackpoc.games.game
+package com.casti.gametrackpoc.games.game.presentation
 
 import com.casti.gametrackpoc.GameService
+import com.casti.gametrackpoc.games.game.data.Game
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
