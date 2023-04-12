@@ -8,11 +8,17 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class GameController(val service: GameService) {
-    @GetMapping("/games")
+    @GetMapping(GameEndpoints.Games.route)
     fun index(): List<Game> = service.findGames()
 
-    @PostMapping("/games")
+    @PostMapping(GameEndpoints.Games.route)
     fun post(@RequestBody game: Game) {
         service.save(game)
+    }
+}
+
+sealed class GameEndpoints {
+    object Games: GameEndpoints() {
+        const val route = "/games/"
     }
 }
