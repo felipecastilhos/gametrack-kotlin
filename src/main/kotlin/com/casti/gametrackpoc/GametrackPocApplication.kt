@@ -18,17 +18,6 @@ fun main(args: Array<String>) {
     runApplication<GametrackPocApplication>(*args)
 }
 
-@RestController
-class GameController(val service: GameService) {
-    @GetMapping("/games")
-    fun index(): List<Game> = service.findGames()
-
-    @PostMapping("/games")
-    fun post(@RequestBody game: Game) {
-        service.save(game)
-    }
-}
-
 @Service
 class GameService(val db: GameRepository) {
     fun findGames(): List<Game> = db.findAll().toList()
