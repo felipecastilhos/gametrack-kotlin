@@ -1,4 +1,4 @@
-package com.casti.gametrackpoc.games.game;
+package com.casti.gametrackpoc.games.game.data;
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
